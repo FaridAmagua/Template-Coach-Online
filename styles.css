@@ -546,7 +546,7 @@ img {
 
 .about-image {
     display: flex;
-    align-items: center; /* Center the image in its column */
+    align-items: flex-end; /* Align the image to the bottom in its column */
     height: 100%;
     width: 100%;
 }

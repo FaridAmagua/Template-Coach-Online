@@ -60,27 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
-    /* --- SIMPLE IMAGE SWAPPER (FADE EFFECT) --- */
-    const sliderImage = document.getElementById('about-slider');
-    
-    if (sliderImage) {
-        const images = ['3.webp', '1.jpg', '2.jpg', '3.webp'];
-        let currentIndex = 0;
-        
-        setInterval(() => {
-            // Fade out
-            sliderImage.style.opacity = 0;
-            
-            setTimeout(() => {
-                // Change image source while invisible
-                currentIndex = (currentIndex + 1) % images.length;
-                sliderImage.src = images[currentIndex];
-                
-                // Fade back in
-                sliderImage.style.opacity = 1;
-            }, 500); // Wait for the 0.5s CSS transition to finish before swapping src
-            
-        }, 5000); // Change image every 5 seconds
-    }
+
 
 });
