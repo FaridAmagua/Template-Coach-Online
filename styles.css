@@ -450,6 +450,12 @@ img {
     font-weight: 400;
 }
 
+.plan-price .old-price {
+    text-decoration: line-through;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
 .plan-desc {
     font-size: 0.875rem;
     color: var(--color-text-light);
